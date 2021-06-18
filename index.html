@@ -27,7 +27,7 @@
       <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Portfolio</title>
   </head>
-  <body id="home">
+  <body id="section-home">
     <!--Navbar-->
         <nav class="navbar sticky-top navbar-expand-lg  navbar-dark" style="background: linear-gradient(-45deg, #1391a5, #274685) ;" id="navbar">
           <div class="container justify-content-center">
@@ -39,23 +39,23 @@
               <ul class="navbar-nav ml-auto align-items-center">
         
                     <li class="nav-item">
-                      <a class="nav-link page-scroll " style="color: white;" href="#home"><i class="fas fa-angle-double-down"></i> Home</a>
+                      <a class="nav-link page-scroll " style="color: white;" href="#section-home"><i class="fas fa-angle-double-down"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link page-scroll" style="color: white;" href="#about1"><i class="fas fa-angle-double-down"></i> About</a>
+                      <a class="nav-link page-scroll" style="color: white;" href="#section-about1"><i class="fas fa-angle-double-down"></i> About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link page-scroll" style="color: white;" href="#services"><i class="fas fa-angle-double-down"></i> Services</a>
+                      <a class="nav-link page-scroll" style="color: white;" href="#section-services"><i class="fas fa-angle-double-down"></i> Services</a>
                     </li>            
                     <li class="nav-item">
-                      <a class="nav-link page-scroll" style="color: white;" href="#gallery"><i class="fas fa-angle-double-down"></i> Gallery</a>
+                      <a class="nav-link page-scroll" style="color: white;" href="#section-gallery"><i class="fas fa-angle-double-down"></i> Gallery</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link page-scroll" style="color: white;" href="#contact"><i class="fas fa-angle-double-down"></i> Contact</a>
+                      <a class="nav-link page-scroll" style="color: white;" href="#section-contact"><i class="fas fa-angle-double-down"></i> Contact</a>
                     </li>
                     <div class="medsos">
                       <!-- Facebook -->
-                      <a  href="https://web.facebook.com/kang.herdi.3954" role="button" class="fb"
+                      <a  href="https://web.facebook.com/kang.herdi.3954" role="section-button" class="fb"
                       ><i class="fab fa-facebook-f fa-lg"></i
                       ></a>
 
@@ -100,7 +100,7 @@
           </div>
         </div>
     <!--End Header-->
-<div id="about1"></div>
+<div id="section-about1"></div>
     <!--About-->
         <div class="halaman bg-shape">
         </div>    
@@ -154,7 +154,7 @@
           </div>
         </div>
     <!--End About-->
-<div id="services"></div>
+<div id="section-services"></div>
 
 <div class="info"></div>
 
@@ -200,7 +200,7 @@
           </div>
         </section>
     <!--End Services-->
-<div id="gallery"></div>
+<div id="section-gallery"></div>
 
     
 
@@ -302,7 +302,7 @@
     </section>
     <!--End Gallery-->
 
-<div id="contact"></div>    
+<div id="section-contact"></div>    
 
 
     <!-- Contact-->
@@ -367,6 +367,7 @@
     <!-- Popper and Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--End Bootstrap JS-->
       
     <!--style JS-->
@@ -376,6 +377,15 @@
         <script src="assets/sarana/aos/aos.js"></script>
         <script type="text/javascript" src="assets/sarana/owl/owl.carousel.js"></script>
     <!--End Sarana-->
+                                                                              
+      <!--SmoothScroll-->
+      //Fungsi Scrool Smooth
+        $(function(){
+          var scroll = new SmoothScroll('a[href*="#section-"]',{
+            speed: 1000,
+          });
+        })
+      <!--SmoothScroll-->
 
      <!--Contact-->
         <script>
@@ -409,18 +419,18 @@
       <!--End Contact-->
                                                                               
      <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/60867d5262662a09efc21ddb/1f46lj2op';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/60867d5262662a09efc21ddb/1f46lj2op';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+    <!--End of Tawk.to Script-->
                                                                                  
   </body>
 </html>

@@ -1,3 +1,9 @@
+// Fungsi Preloader
+var preloader = document.getElementById('preloader');
+window.addEventListener('load',function(){
+  preloader.style.display="none";
+});
+
 //Fungsi Scrool Smooth
   $(function(){
     var scroll = new SmoothScroll('a[href*="#section-"]',{

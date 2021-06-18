@@ -1,3 +1,9 @@
+//Fungsi Scrool Smooth
+  $(function(){
+    var scroll = new SmoothScroll('a[href*="#section-"]',{
+      speed: 1000,
+    });
+  })
 
   
 // Scrol otomatis saat link di klik

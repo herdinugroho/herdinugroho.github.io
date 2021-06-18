@@ -150,7 +150,7 @@ margin: auto;
 box-shadow: 0 10px 29px 10px rgba(68, 88, 144, 0.1);
 background-image: url(../img/hero-bg2.png) ;
 transition: all 0.9s ease-in-out;
-margin-top: -90px;
+margin-top: -50px;
 margin-bottom: 150px;
 }
 #about:hover{

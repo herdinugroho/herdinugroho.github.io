@@ -27,7 +27,8 @@
       <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Portfolio</title>
   </head>
-  <body id="section-home">
+  <body id="darkmode">
+    <div id="section-home"></div>
     <div id="preloader"></div>
     <!--Navbar-->
         <nav class="navbar sticky-top navbar-expand-lg  navbar-dark" style="background: linear-gradient(-45deg, #1391a5, #274685) ;" id="navbar">
@@ -125,30 +126,38 @@
             
               <div class="col-sm-6 about-kanan">
                 <h4>Skill Front End</h4>
-                <div class="skill">
-                  <h6>HTML</h6>
-                  <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
-                  </div>
-                </div><br>
-                <div class="skill">
-                  <h6>CSS</h6>
-                  <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
-                  </div>
-                </div><br>
-                <div class="skill">
-                  <h6>JavaScript</h6>
-                  <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-                  </div>
-                </div><br>
-                <div class="skill">
-                  <h6>Photoshop</h6>
-                  <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
-                  </div>
-                </div>
+                <div class="progress-title1">
+                    <h3>HTML</h3>
+                    <div class="progress">
+                      <div class="progress-bar" style="width:85%; background:#e33a16;">
+                        <div class="progress-value">85%</div>
+                      </div>
+                    </div>
+                  </div><br>
+                  <div class="progress-title1">
+                    <h3>CSS</h3>
+                    <div class="progress">
+                      <div class="progress-bar" style="width:80%; background:#2c5fee;">
+                        <div class="progress-value">80%</div>
+                      </div>
+                    </div>
+                  </div><br>
+                  <div class="progress-title1">
+                    <h3>JAVASCRIPT</h3>
+                    <div class="progress">
+                      <div class="progress-bar" style="width:50%; background:#d0ef0b;">
+                        <div class="progress-value">50%</div>
+                      </div>
+                    </div>
+                  </div><br>
+                  <div class="progress-title1">
+                    <h3>PHOTOSHOP</h3>
+                    <div class="progress">
+                      <div class="progress-bar" style="width:60%; background:#143aa5;">
+                        <div class="progress-value">60%</div>
+                      </div>
+                    </div>
+                  </div><br>
 
               </div>
             </div>
@@ -362,6 +371,27 @@
       <footer class="akhir">
         <h2>Portfolio</h2>
         <p>Copyright © 2021 Portfolio. Design By Herdi Nugroho</p>
+                   <div style="margin-top: -10px;"> 
+                      <button type="button" class="btn btn-outline-light btn-sm" onclick="setDarkMode(true)"><b><i class="far fa-sun"></i> Light</b></button>
+                      <button type="button" class="btn btn-outline-dark btn-sm" onclick="setDarkMode(false)"><b><i class="fas fa-sun"></i> Dark</b></button>
+                      <style>
+                        #darkmode {
+                          background:#fff;
+                          color:#3d3636;
+                        }
+                      </style>
+                      
+                      <script>
+                        function setDarkMode(isDark){
+                          if(isDark){
+                            document.body.setAttribute('id', 'darkmode')
+                          }else{
+                            document.body.setAttribute('id', '')
+                          }
+
+                        }
+                      </script>
+                   </div>   
       </footer>
     <!-- End Footer-->
 
